@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NJ Transit</title>
+    <link rel="icon" href="../content/logo.png" type="image/png">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top scrolling-navbar">
+      <a class="navbar-brand" href="home.html"><img src="../content/logo.png"  class="logo" alt="Brand"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="home.html"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-train"></i> Facilities<span class="caret"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="home.html">Book Ticket</a>
+              <a class="dropdown-item" href="cancel.html">Cancel Ticket</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="PID.html">PID Enquiry</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="schedule.html">Train Schedule</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="track.html">Trains b/w stations</a>
+            </div>
+          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Train/PID" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Go!</button>
+          </form>
+          <li class="nav-item">
+            <a class="nav-link" href="signIn.html"><i class="fa fa-sign-in"></i> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signUp.html"><i class="fa fa-user-plus"></i> Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="container register info">
+            <h3 class="info-heading">Schedule of All Trains</h3>
+          <p class="details">We provides train-running related and real-time status queries for all trains of NEW JERSEY. We also provide Schedule of all Trains, this allows you to choose the train that matches to your time and comfort so that your journey can be like never before We always try to make your journey a memorable moments.</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="container register">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                  <h3 class="register-heading">Train Schedule</h3>
+                                  <div class="row register-form">
+                                      <div class="col-md-12">
+                                          <form method="post">
+                                              <div class="form-group">
+                                                  Train Detail:<input type="text" name="td" class="form-control" placeholder="Train Name/No." value="" required=""/>
+                                              </div>
+                                              <div class="form-group">
+                                                Date:
+                                                <div class="input-group">
+                                                  <input class="form-control" id="date" name="date"  type="date"/>
+                                                </div>
+                                              </div>
+                                              <div class="form-group">
+                                                <button class="btn btn-primary " name="submit" type="submit">
+                                                 Check
+                                                </button>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../JavaScript/bootstrap.min.js"></script>
+
+  </body>
+</html>
